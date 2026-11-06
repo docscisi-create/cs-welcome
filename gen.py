@@ -743,8 +743,8 @@ team = page_hero("فريق الابتكار الرقمي التطوعي", "Digit
   <div class="container">
     {head("الإشراف", "بإشراف")}
     <div class="grid g2" style="max-width:820px;margin-bottom:46px">
-      <div class="card member lead reveal"><div class="avatar photo"><img src="assets/img/dean.jpg" alt="الأستاذ الدكتور ميثاق طالب كاطع" width="320" height="320" loading="lazy"></div><h3>الأستاذ الدكتور ميثاق طالب كاطع</h3><p class="role">عميد كلية العلوم</p><p class="muted">كلية العلوم – الجامعة المستنصرية</p></div>
-      <div class="card member lead reveal"><div class="avatar photo"><img src="assets/img/head-cs.jpg" alt="الأستاذ الدكتور ذكرى حيدر علي عباس" width="320" height="320" loading="lazy"></div><h3>الأستاذ الدكتور ذكرى حيدر علي عباس</h3><p class="role">رئيسة قسم علوم الحاسوب</p><p class="muted">قسم علوم الحاسوب – كلية العلوم</p></div>
+      <div class="card member lead reveal"><div class="avatar photo" style="width:132px;height:132px;overflow:hidden;padding:0;background:#EEF4FF"><img style="width:132px;height:132px;max-width:none;object-fit:cover;object-position:center top;border-radius:50%;display:block" src="assets/img/dean.jpg" alt="الأستاذ الدكتور ميثاق طالب كاطع" width="132" height="132"></div><h3>الأستاذ الدكتور ميثاق طالب كاطع</h3><p class="role">عميد كلية العلوم</p><p class="muted">كلية العلوم – الجامعة المستنصرية</p></div>
+      <div class="card member lead reveal"><div class="avatar photo" style="width:132px;height:132px;overflow:hidden;padding:0;background:#EEF4FF"><img style="width:132px;height:132px;max-width:none;object-fit:cover;object-position:center top;border-radius:50%;display:block" src="assets/img/head-cs.jpg" alt="الأستاذ الدكتور ذكرى حيدر علي عباس" width="132" height="132"></div><h3>الأستاذ الدكتور ذكرى حيدر علي عباس</h3><p class="role">رئيسة قسم علوم الحاسوب</p><p class="muted">قسم علوم الحاسوب – كلية العلوم</p></div>
     </div>
     {head("أعضاء الفريق", "أعدّ هذا الدليل")}
     <div class="grid g4">{mem_html}</div>
