@@ -721,11 +721,16 @@ email = page_hero("البريد الإلكتروني الجامعي", "هويت�
 """
 
 # ================================================================ TEAM
-MEMBERS = [("إ", "الأستاذ المساعد الدكتور إيثار عبد الوهاب حاجم", "رئيسة الفريق", True), ("ي", "الأستاذ المساعد ياسمين مكي محي الدين", "عضو الفريق", False),
-           ("ص", "الأستاذ صلاح طه", "عضو الفريق", False), ("ب", "الأستاذ المساعد باسم أخضير عباس علاوي", "عضو الفريق", False)]
+MEMBERS = [("m-ithar.jpg", "الأستاذ المساعد الدكتور إيثار عبد الوهاب حاجم", "رئيسة الفريق", True),
+           ("m-yasmin.jpg", "الأستاذ المساعد ياسمين مكي محي الدين", "عضو الفريق", False),
+           ("m-salah.jpg", "الأستاذ صلاح طه علاوي", "عضو الفريق", False),
+           ("m-basim.jpg", "الأستاذ المساعد باسم أخضير عباس", "عضو الفريق", False)]
+AV_BOX = "width:112px;height:112px;overflow:hidden;padding:0;background:#EEF4FF"
+AV_IMG = "width:112px;height:112px;max-width:none;object-fit:cover;object-position:center top;border-radius:50%;display:block"
 mem_html = "".join(
-    f'<div class="card member reveal{" lead" if lead else ""}">{"<span class=badge>رئيسة الفريق</span>" if lead else ""}<div class="avatar">{ini}</div>'
-    f'<h3>{name}</h3><p class="role">{role}</p><p class="muted">قسم علوم الحاسوب – كلية العلوم</p></div>' for ini, name, role, lead in MEMBERS)
+    f'<div class="card member reveal{" lead" if lead else ""}">{"<span class=badge>رئيسة الفريق</span>" if lead else ""}'
+    f'<div class="avatar photo" style="{AV_BOX}"><img style="{AV_IMG}" src="assets/img/{photo}" alt="{name}" width="112" height="112"></div>'
+    f'<h3>{name}</h3><p class="role">{role}</p><p class="muted">قسم علوم الحاسوب – كلية العلوم</p></div>' for photo, name, role, lead in MEMBERS)
 team = page_hero("فريق الابتكار الرقمي التطوعي", "Digital Innovation Team — فريق تطوعي من تدريسيي قسم علوم الحاسوب يعمل على مبادرات رقمية تخدم الطلبة والقسم.", "فريق الابتكار", 71) + f"""
 <section class="block">
   <div class="container grid g2" style="align-items:center">
