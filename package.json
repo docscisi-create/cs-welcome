@@ -1,0 +1,13 @@
+{
+  "name": "cs-first-year-welcome",
+  "version": "1.0.0",
+  "description": "Welcome site for first-year Computer Science students – Mustansiriyah University (Digital Innovation Team)",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "python3 gen.py"
+  },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}
